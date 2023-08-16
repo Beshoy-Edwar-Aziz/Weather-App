@@ -2,7 +2,7 @@ let search=document.getElementById('search')
 let arr
 let tome=[]
 async function dope(city){
-    let weather= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=6e1fde54ef924489a2e175229231508&q=${city}&days=3`)
+    let weather= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=6e1fde54ef924489a2e175229231508&q=${city}&days=3`)
     let data= await weather.json()
     arr=data
     console.log(data.forecast.forecastday[0].date)
