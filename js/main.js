@@ -36,8 +36,8 @@ function display(){
     let dC=new Date(arr.location.localtime)
     let d1=new Date(arr.forecast.forecastday[1].date)
     let d2=new Date(arr.forecast.forecastday[2].date)
-    var cartona=``
-    cartona+=`
+    var box=``
+    box+=`
     <div class="col-12 col-md-12 col-lg-4">
                 <div class="card">
                     <div class="card-header d-flex justify-content-between pb-0">
@@ -88,28 +88,9 @@ function display(){
                 </div>
             </div>
             `
-            document.getElementById('display').innerHTML=cartona
+            document.getElementById('display').innerHTML=box
             }
 
 
 
-// function display2(){
-//     var  cartona2=''
-//                 cartona2+=`
-//                 <div class="col-md-4">
-//                 <div class="card">
-//                     <div class="card-header pb-0">
-//                         <p class="text-center">${arr.forecast.forecastday[0].date}</p>
-//                     </div>
-//                     <div class="card-body">
-//                     <div class="text-center">
-//                         <i class="fa-solid fa-sun text-warning fs-3"></i>
-//                     <h1 class="text-center">${arr.forecast.forecastday[0].day.maxtemp_c}<sup>o</sup>C</h1>
-//                     <h2 class="text-center">${arr.forecast.forecastday[0].day.avgtemp_c}<sup>o</sup>C</h2>
-//                 </div>
-//                 <p class="text-center">${arr.forecast.forecastday[0].day.condition.text}</p>
-//                 </div>
-//                 </div>
-//             </div>`
-//             document.getElementById('display2').innerHTML=cartona2}
             
