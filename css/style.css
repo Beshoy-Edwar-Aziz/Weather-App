@@ -75,6 +75,10 @@ nav ul li{
     min-width: 100px;
     z-index: 111;
 }
+.input-group button:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+}
 #search{
     height: 50px;
 }
@@ -142,4 +146,12 @@ footer p{
     color: #bfc1c8;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
+}
+#home .container #loc{
+    background-color: #009ad8 !important;
+    color: #fff !important;
+}
+#home .container #loc:hover{
+    background-color: transparent !important;
+    color: #fff !important;
 }

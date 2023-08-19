@@ -1,6 +1,7 @@
 let search=document.getElementById('search')
 let arr
 let tome=[]
+let locationBtn=document.getElementById('loc')
 async function dope(city){
     let weather= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=6e1fde54ef924489a2e175229231508&q=${city}&days=3`)
     let data= await weather.json()
@@ -27,7 +28,10 @@ const successCallback = (position) => {
   };
   
   navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-search.addEventListener('keyup',function(e){
+locationBtn.addEventListener('click',function(){
+    navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+})
+  search.addEventListener('keyup',function(e){
     console.log(search.value)
  dope(search.value)
 })
